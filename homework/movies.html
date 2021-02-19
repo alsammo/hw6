@@ -13,7 +13,25 @@
   </div>
 
   <!-- Put the Firebase config here -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-x0DFzUuhM2AgsRy_FE1s9qNsZpmqAFc",
+    authDomain: "kiei-451-28084.firebaseapp.com",
+    projectId: "kiei-451-28084",
+    storageBucket: "kiei-451-28084.appspot.com",
+    messagingSenderId: "313827327115",
+    appId: "1:313827327115:web:4cb7fdd8a9008dcf20a88e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   <script src="movies.js"></script>
 </body>
 </html>
