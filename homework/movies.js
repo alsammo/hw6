@@ -33,20 +33,6 @@ window.addEventListener('DOMContentLoaded', async function(event) {
 
   
 
-
-  // Step 2: 
-  // - Loop through the Array called movies and insert HTML
-  //   into the existing DOM element with the class name .movies
-  // - Include a "watched" button to click for each movie
-  // - Give each "movie" a unique class name based on its numeric
-  //   ID field.
-  // Some HTML that would look pretty good... replace with real values :)
-  // <div class="w-1/5 p-4 movie-abcdefg1234567">
-  //   <img src="https://image.tmdb.org/t/p/w500/moviePosterPath.jpg" class="w-full">
-  //   <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
-  // </div>
-  // ⬇️ ⬇️ ⬇️
-
   for (let i=0 ; i<movies.length ;i++){
 
     let movie = movies[i]
@@ -76,6 +62,20 @@ window.addEventListener('DOMContentLoaded', async function(event) {
       await db.collection('Watched').doc(`${movieid}`).set({ })
     })
   }
+
+
+  // Step 2: 
+  // - Loop through the Array called movies and insert HTML
+  //   into the existing DOM element with the class name .movies
+  // - Include a "watched" button to click for each movie
+  // - Give each "movie" a unique class name based on its numeric
+  //   ID field.
+  // Some HTML that would look pretty good... replace with real values :)
+  // <div class="w-1/5 p-4 movie-abcdefg1234567">
+  //   <img src="https://image.tmdb.org/t/p/w500/moviePosterPath.jpg" class="w-full">
+  //   <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
+  // </div>
+  // ⬇️ ⬇️ ⬇️
 
   // ⬆️ ⬆️ ⬆️ 
   // End Step 2
